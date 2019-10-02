@@ -19,3 +19,60 @@ main {
   max-width: 1500px;
   padding: 20px;
 }
+
+.cards {
+  background: #eee;
+  display: inline-flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+.cards section:last-child {
+  order: -1
+}
+
+.card {
+  background: #fff;
+  border: 2px solid #aaa;
+  border-radius: 5px;
+  padding: 1em;
+  max-width: 29.375em;
+  max-height: 20em;
+  margin-bottom: 0.625em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  overflow: auto;
+
+}
+
+.card__h2 {
+  display: inline;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.card__container {
+  display: inline;
+}
+
+.card__container__p {
+  font-size: 1em;
+  line-height: 1.25em;
+}
+
+.card__ul__li {
+  display: inline-flex;
+}
+
+.card__ul {
+  margin-top: auto;
+  padding-top: 1em;
+  font-weight: bold;
+}
+ 
+.card__container__img > img{
+  width: 9.375em;
+  padding-right: 1.25em;
+}
